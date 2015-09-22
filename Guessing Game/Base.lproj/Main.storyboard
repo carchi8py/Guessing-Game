@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Guessing_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,7 +16,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Higher or Lower Game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxa-Dj-Nuf">
+                                <rect key="frame" x="145" y="20" width="311" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess a number..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTf-7o-4RB">
+                                <rect key="frame" x="16" y="78" width="139.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnn-ep-uhV">
+                                <rect key="frame" x="16" y="137" width="555" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2p-4k-ntv">
+                                <rect key="frame" x="503" y="78" width="67.5" height="30"/>
+                                <state key="normal" title="Guess">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjy-fv-OxH">
+                                <rect key="frame" x="169" y="74" width="321" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9D-yQ-ii3">
+                                <rect key="frame" x="280" y="192" width="40" height="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xjy-fv-OxH" firstAttribute="centerY" secondItem="eTf-7o-4RB" secondAttribute="centerY" constant="0.5" id="217-c1-30U"/>
+                            <constraint firstItem="eTf-7o-4RB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="23y-pz-rGd"/>
+                            <constraint firstItem="xjy-fv-OxH" firstAttribute="top" secondItem="pxa-Dj-Nuf" secondAttribute="bottom" constant="18" id="4hw-XY-W4U"/>
+                            <constraint firstAttribute="centerX" secondItem="pxa-Dj-Nuf" secondAttribute="centerX" constant="-0.5" id="6RD-KA-GP9"/>
+                            <constraint firstItem="xjy-fv-OxH" firstAttribute="centerY" secondItem="n2p-4k-ntv" secondAttribute="centerY" constant="-4" id="GI6-ew-Io0"/>
+                            <constraint firstItem="pxa-Dj-Nuf" firstAttribute="centerX" secondItem="xjy-fv-OxH" secondAttribute="centerX" constant="-29" id="LVD-JY-pN5"/>
+                            <constraint firstItem="pxa-Dj-Nuf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TDp-Gv-N60"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n2p-4k-ntv" secondAttribute="trailing" constant="13" id="cYz-XM-EC3"/>
+                            <constraint firstItem="xjy-fv-OxH" firstAttribute="leading" secondItem="eTf-7o-4RB" secondAttribute="trailing" constant="13" id="gTu-vp-bno"/>
+                            <constraint firstItem="n2p-4k-ntv" firstAttribute="leading" secondItem="xjy-fv-OxH" secondAttribute="trailing" constant="13" id="icP-iv-jnb"/>
+                            <constraint firstItem="l9D-yQ-ii3" firstAttribute="top" secondItem="tnn-ep-uhV" secondAttribute="bottom" constant="34.5" id="ids-uK-fb5"/>
+                            <constraint firstItem="tnn-ep-uhV" firstAttribute="top" secondItem="xjy-fv-OxH" secondAttribute="bottom" constant="33" id="jby-9Y-Mr0"/>
+                            <constraint firstItem="tnn-ep-uhV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mtg-Kd-unh"/>
+                            <constraint firstItem="tnn-ep-uhV" firstAttribute="centerX" secondItem="l9D-yQ-ii3" secondAttribute="centerX" constant="-6.5" id="vh1-aV-tDX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tnn-ep-uhV" secondAttribute="trailing" constant="13" id="zmH-iK-jaY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
