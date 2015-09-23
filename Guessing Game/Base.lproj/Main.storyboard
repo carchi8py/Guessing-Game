@@ -47,7 +47,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjy-fv-OxH">
                                 <rect key="frame" x="169" y="74" width="321" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9D-yQ-ii3">
                                 <rect key="frame" x="280" y="192" width="40" height="30"/>
@@ -80,7 +80,6 @@
                     </view>
                     <connections>
                         <outlet property="guessTextField" destination="xjy-fv-OxH" id="tyk-ZA-Fyc"/>
-                        <outlet property="resetPressdButton" destination="l9D-yQ-ii3" id="gJp-ce-Qqq"/>
                         <outlet property="resultsLabel" destination="tnn-ep-uhV" id="ggt-W1-Nu3"/>
                     </connections>
                 </viewController>
