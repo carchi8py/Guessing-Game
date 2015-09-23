@@ -40,6 +40,9 @@
                                 <state key="normal" title="Guess">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="GuessPressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sD1-K6-syw"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xjy-fv-OxH">
                                 <rect key="frame" x="169" y="74" width="321" height="30"/>
@@ -51,6 +54,9 @@
                                 <state key="normal" title="Reset">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetPressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fth-ws-NHK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -72,6 +78,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="tnn-ep-uhV" secondAttribute="trailing" constant="13" id="zmH-iK-jaY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="guessTextField" destination="xjy-fv-OxH" id="tyk-ZA-Fyc"/>
+                        <outlet property="resetPressdButton" destination="l9D-yQ-ii3" id="gJp-ce-Qqq"/>
+                        <outlet property="resultsLabel" destination="tnn-ep-uhV" id="ggt-W1-Nu3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

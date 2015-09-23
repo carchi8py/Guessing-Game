@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var guessTextField: UITextField!
+    @IBOutlet weak var resultsLabel: UILabel!
+    
+    var number: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func GuessPressedButton(sender: AnyObject) {
+    }
+    
+    
+    @IBAction func resetPressedButton(sender: AnyObject) {
+    }
 }
 
